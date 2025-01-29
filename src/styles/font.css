@@ -1,0 +1,84 @@
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/WorkSans RomanRegular.ttf");
+    font-family: "Work Sans";
+    font-weight: 400;
+}
+@font-face {
+    font-display: swap;
+    font-style:normal;
+    src: url("/public/fonts/InterRegular.ttf");
+    font-family: "Inter";
+    font-weight: 400;
+}
+@font-face {
+    font-display: swap;
+    font-style:normal;
+    src: url("/public/fonts/WorkSansRomanSemiBold.ttf");
+    font-family: "Work Sans";
+    font-weight: 600;
+}
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/WorkSans RomanMedium.ttf");
+    font-family: "Work Sans";
+    font-weight: 500;
+}
+@font-face {
+    font-display: swap; 
+    font-style: normal;
+    src: url("/public/fonts/InterSemiBold.ttf");
+    font-family: "Inter";
+    font-weight: 600;
+}
+@font-face {
+    font-display: swap;
+    font-style:normal;
+    src: url("/public/fonts/InterMedium.ttf");
+    font-family: "Inter";
+    font-weight: 500;
+}
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/DMSansMedium.ttf");
+    font-family: "DM Sans";
+    font-weight: 500;
+}
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/DMSansSemiBold.ttf");
+    font-family: "DM Sans";
+    font-weight: 600;
+}
+@font-face { 
+    font-display: swap; 
+    font-style:normal;
+    src: url("/public/fonts/WorkSansRomanBold.ttf");
+    font-family: "Work Sans";
+    font-weight: 700;
+}
+@font-face {
+    font-display: swap;
+    font-style:normal;
+    src: url("/public/fonts/DMSansBold.ttf");
+    font-family:"DM Sans";
+    font-weight: 700;
+}
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/DMSansRegular.ttf");
+    font-family: "DM Sans";
+    font-weight: 400;
+}
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    src: url("/public/fonts/WorkSansRomanLight.ttf");
+    font-family: "Work Sans";
+    font-weight: 300;
+}
