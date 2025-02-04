@@ -55,5 +55,3 @@ The implementation is based on Figma designs provided for the UMURAVA platform.
 - Component-based architecture for better maintainability
 - Follows React best practices and conventions
 
-## License
-[Add your license information here]
