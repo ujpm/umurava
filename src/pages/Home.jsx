@@ -41,3 +41,73 @@ const Home = () => {
           <Link to="/about" style={{ color: "#87CEFA", textDecoration: "none" }}>
             ABOUT
           </Link>
+        </li>
+        <li style={{ marginBottom: "10px" }}>
+        <Link to="/forlearninginstitutionspage" style={{ color: "#87CEFA", textDecoration: "none" }}>
+            FORLEARNINGINSTITUTIONSPAGE
+        </Link>
+        </li>
+        <li style={{ marginBottom: "10px" }}>
+        <Link to="/homepagedashboardone" style={{ color: "#87CEFA", textDecoration: "none" }}>
+            HomepageDashboardOne
+        </Link>
+        </li>
+        <li style={{ marginBottom: "10px" }}>
+        <Link to="/challengeshackathonsone" style={{ color: "#87CEFA", textDecoration: "none" }}>
+            ChallengesHackathonsOne
+        </Link>
+        </li>
+        <li style={{ marginBottom: "10px" }}>
+          <Link to="/challengedetailsone" style={{ color: "#87CEFA", textDecoration: "none" }}>
+            ChallengeDetailsOne
+          </Link>
+        </li>
+        <li style={{ marginBottom: "10px" }}>
+          <Link to="editchallengeshackathons" style={{ color: "#87CEFA", textDecoration: "none" }}>
+            EditChallengeHackathons
+          </Link>
+        </li>
+      </ul>
+      </div>
+  );
+};
+export default Home;
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
