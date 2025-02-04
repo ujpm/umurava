@@ -1,43 +1,28 @@
-import { Text, Heading } from "../../components";
-import UserDashboard from "../../components/UserDashboard";
-import UserDashboard1 from "../../components/UserDashboard1";
-import React, { Suspense } from "react";
+import { Helmet } from "react-helmet";
+import Header from "../../components/Header";
+import Sidebar1 from "../../components/Sidebar1";
+import HomepagedashboardColumnrecent from "./HomepagedashboardColumnrecent";
+import HomepagedashboardRowline from "./HomepagedashboardRowline";
+import React from "react";
 
-const data = [
-  { completedChallengesText: "Completed Challenges", completedChallengesCount: "5,837", challengesButton: "15%" },
-  { completedChallengesText: "Open  Challenges", completedChallengesCount: "5,837", challengesButton: "15%" },
-  { completedChallengesText: "Ongoing Challenges", completedChallengesCount: "5,837", challengesButton: "15%" },
-];
-
-export default function HomepagedashboardoneColumnOne() {
+export default function HomepageDashboardPage() {
   return (
-    <div className="mt-[1.50rem] flex flex-col gap-[2.75rem] px-[2.25rem] sm:px-[1.25rem]">
-      <div className="flex flex-col items-start gap-[0.25rem]">
-        <Heading
-          size="heading6xl"
-          as="h1"
-          className="text-[1.50rem] font-semibold tracking-[0.00rem] !text-[#000000] md:text-[1.38rem]"
-        >
-          Welcome back Hilaire,
-        </Heading>
-        <Text as="p" className="text-[1.00rem] font-normal">
-          Build Work Experience through Skills Challenges
-        </Text>
-      </div>
-      <div className="flex flex-col gap-[1.00rem]">
-        <div className="flex gap-[1.00rem] md:flex-col">
-          <UserDashboard />
-          <UserDashboard />
-        </div>
-        <div className="flex gap-[1.00rem] md:flex-col">
-          <Suspense fallback={<div>Loading feed...</div>}>
-            {data.map((d, index) => (
-              <UserDashboard1 {...d} key={"listduration" + index} />
-            ))}
-          </Suspense>
+    <>
+      <Helmet>
+        <title>umurava-1</title>
+        <meta name="description" content="Web site created using create-react-app" />
+      </Helmet>
+      <div className="flex w-full bg-[#f9f9fb]">
+        <Sidebar1 />
+        <div className="flex flex-1 flex-col gap-[1.50rem] bg-[#f9f9fb]">
+          <Header />
+          <div className="mx-[2.13rem] mb-[8.13rem] flex flex-col gap-[2.63rem] md:mx-0">
+            <HomepagedashboardRowline />
+            <HomepagedashboardColumnrecent />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

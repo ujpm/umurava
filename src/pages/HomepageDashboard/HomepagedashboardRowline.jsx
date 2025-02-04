@@ -41,3 +41,7 @@ export default function HomepagedashboardRowline() {
           </Suspense>
         </div>
       </div>
+    </div>
+  );
+}
+  
