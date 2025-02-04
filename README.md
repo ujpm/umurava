@@ -1,50 +1,59 @@
-# React + TypeScript + Vite
+# UMURAVA Skills Challenge Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About the Project
+This repository contains our team's implementation of the UMURAVA platform, developed as part of the UMURAVA Skills Challenge running from January 22nd to February 5th, 2025. The project involves developing the UMURAVA platform based on provided Figma designs.
 
-Currently, two official plugins are available:
+## Team Members
+- [@ujpm](https://github.com/ujpm)
+- [@topister](https://github.com/topister)
+- [@akoguteta](https://github.com/akoguteta)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Timeline
+- Start Date: January 22nd, 2025
+- End Date: February 5th, 2025
 
-## Expanding the ESLint configuration
+## Tech Stack
+- React.js
+- Tailwind CSS
+- Vite
+- JSX
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Project Structure
+```
+umurava/
+├── public/          # Static files and assets
+│   ├── fonts/      # Custom fonts
+│   └── images/     # Image assets
+├── src/            # Source code
+│   ├── components/ # React components (.jsx)
+│   ├── pages/      # Page components (.jsx)
+│   └── styles/     # CSS files
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+## Getting Started
+1. Clone the repository:
+```bash
+git clone https://github.com/ujpm/umurava.git
 ```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Run the development server:
+```bash
+npm run dev
+```
+
+## Design Reference
+The implementation is based on Figma designs provided for the UMURAVA platform.
+
+## Development Guidelines
+- All React components are written in JSX
+- Styling is handled with Tailwind CSS
+- Component-based architecture for better maintainability
+- Follows React best practices and conventions
+
+## License
+[Add your license information here]
