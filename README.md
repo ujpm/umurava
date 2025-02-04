@@ -6,7 +6,7 @@ This repository contains our team's implementation of the UMURAVA platform, deve
 ## Team Members
 - [@ujpm](https://github.com/ujpm)
 - [@topister](https://github.com/topister)
-- [@akoguteta](https://github.com/akoguteta)
+- [@Akoguteta12](https://github.com/Akoguteta12)
 
 ## Project Timeline
 - Start Date: January 22nd, 2025
@@ -55,5 +55,3 @@ The implementation is based on Figma designs provided for the UMURAVA platform.
 - Component-based architecture for better maintainability
 - Follows React best practices and conventions
 
-## License
-[Add your license information here]
