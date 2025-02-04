@@ -41,3 +41,66 @@ const ProjectRoutes = () => {
     },
     {
       path: "about",
+      element: <ABOUT />,
+    },
+    {  path: "forlearninginstitutionspage", 
+       element: <FORLEARNINGINSTITUTIONSPAGE/>,
+    },
+    {
+      path: "homepagedashboardone",
+      element: <HomepageDashboardOne/>,
+      },
+    {
+      path: "challengeshackathonsone",
+      element: <ChallengesHackathonsOne />,
+      },
+    {
+      path: "challengeshackathontwo",
+      element: <ChallengesHackathonsTwo />,
+      },
+    {
+      path: "challengedetailsone",
+      element: <ChallengeDetailsOne />,
+      },
+    {
+      path: "editchallengeshackathons",
+      element: <EditChallengesHackathons />,
+      },
+  ]);
+  return element;
+};
+
+export default ProjectRoutes;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
