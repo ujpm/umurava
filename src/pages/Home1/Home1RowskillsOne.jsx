@@ -88,11 +88,84 @@ export default function Home1RowskillsOne() {
                 <slider
                 autoplayInterval={2000}
                 responsive={{0: { items: 1}, 551: { items: 1}, 1051: {itms: 1 } }}
-                
+                disableDotscontrols
+                activeIndex={sliderState}
+                onSlideChanged={(e) => {
+                  setSliderState(e?.item);
+                }}
+                ref={sliderRef}
+                items={[...Array(3)].map(() => (
+                  <React.Fragment key={Math.random()}>
+                    <div className="flex items-center rounded-[12px] bg-[#f1f1f1] p-[2.75rem] md: flx-col md:p-[1.25rem]">
+                      <div className="flex w-[42%] flex-col items-start gap-[1.50rem]">
+                        <div className="flex flex-col items-start gap-[1.50rem]">
+                          <div className="flex rounded-[10px] bg -[#ffffff] p-[1.38rem] sm:p-[1.25rem]">
+                            <img
+                              src="images/img-soko-fund-a-4x-8.png"
+                            />
+                          </div>
+                          <text
+                            size="text4x1"
+                            as="p"
+                            className="w-[86%] text-[1.13rem] font-light leading-[1.88rem] !text-[#677488] md:w-full"
+                          >
+                            The Embedded Finance Platform and Payroll Managemnet Software Solution for your organization and workforfce.
+                          </text>
+                        </div>
+                        <div className="flex items-center gap-[0.69rem] py-[0.63rem]">
+                          <a href="#"
+                            <Heading
+                              size="Headinglg"
+                              as="h3"
+                              className="!font-['inter'] text-[0.94rem] font-semibold !text-[#2b71f0]"
+                            >
+                              Lean more
+                            </Heading>
+                          </a>
+                          <Button size="x1" className="w-[1.88rem] rounded-[14px] px-[0.50rem]">
+                            <img src="images/img_arrow_left.svg" />
+                          </Button>
+                        </div>
+                      </div>
+                      <img
+                        src="images/img_payrolldashboard.svg"
+                        alt="payrolldashboard"
+                        className="h-[25.88rem] w-[54%] object-contain md:w-full"
+                      />
+                    </div>
+                  </React.Fragment>
+                ))}
+              />
           </div>
-        </div>
+          <div className="flex items-center justify-center">
+            {[...Array(4)].map((_, i) => (
+              <>
+              {sliderState >= i * (sliderRef?.current?.state?.itemsInSlide || 1) &&
+              sliderState < (i+1) * (sliderRef?.current?.state?.itemsInSlide || 1) ? (
+                <div
+                  onClick={() => {
+                    sliderRef?.current?.slideTo(i * sliderRef?.current?.state?.itemsInSlide);
+                  }}
+                  className="mr-[0.63rem] inline-block h-[0.63rem] w-[0.63rem] cursor-pointer rounded-[50%] bg-[#2b71f0]"
+              )}
+              />
+            ) : (
+              <div
+                onClick={() => {
+                   sliderRef?.current?.slideTo(i * sliderRef?.current?.state?.itemsInSlide);
+                }}
+                className="mr-[0.63rem] inline-block h-[0.63rem] w-[0.63rem] cursor-pointer rounded-[50%] bg-[#d9d9d9]">
+              />
+            )}
+          </>
+        ))}
       </div>
     </div>
-  );
-}
+  </div>
+</div>
+</div>
+      );
+    }
+    
 
+          
