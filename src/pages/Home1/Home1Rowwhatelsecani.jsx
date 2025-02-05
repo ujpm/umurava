@@ -39,5 +39,16 @@ export default function Home1Rowwhatelsecani() {
             />
             <Heading as="h3" className="w-full text-[0.88rem] font-normal leading-[150%] !text-[#677488]">
               Challenge yourself, learn new skills, and expand your professional network.{" "}
-            </Heading>
+              </Heading>
+            </div>
+            <img
+             src="images/img_skill_section_banner.png"
+             alt+"skillssection"
+             className="h-[30,00rem] w-[40% self-center object-contain md:w-full"
+            />
           </div>
+        </div>
+      </div>
+  );
+}
+

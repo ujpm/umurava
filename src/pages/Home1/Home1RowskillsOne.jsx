@@ -41,3 +41,58 @@ export default function Home1RowskillsOne() {
             </div>
             <div className="mx-[7.75rem] flex flex-col items-center gap-[1.25rem] md:mx-0">
               <div className="flex w-[36%] justify-center gap-[1.88rem] md:w-full">
+                <div className="flex flex-col items-center gap-[1.25rem] md:w-full">
+                  <Text size ="text4xl" as="p" className="self-end text=1[1.13rem] font-normal !text-[#ffffff]>
+                  UI/UX Design
+                  </Text>
+                </div>
+                </Button>
+                  color="blue_gray_50"
+                  size="8x1"
+                  className="min-w-[10.13rem] rounded-lg px-[1.50rem] s,:px-[1.25rem]"
+                >
+                  Data Science
+                </Button>
+                </div>
+                <ChipView
+                  options={chipOptions}
+                  selectedOptions={selectedChipOptions}
+                  values={selectedChipOptions}
+                  setvalues={setSelectedChipOptions}
+                  className="flex flex-wrap gap-x-[1.88rem] gap-y-[1.25rem] self-stretch"
+                >
+                  {(option)} => (
+                    <React.Fragment key={option.index}>
+                      {option.isSeleceted ? (
+                        <div
+                          onClick={option.toggle}
+                          className="flex h-[3.38rem] cursor-pointer flex-row items-center whitespace-prewrap rounded-lg border"
+                        >
+                          <span>{option.label}</span>
+                        </div>
+                      ) : (  
+                        <div
+                          onClick={option.toggle}
+                          className="flex h-[3.38rem] cursor-pointer flex-row items-center rounded-lg bg-[#f1f1f1] px-[1.50rem]"
+                        >
+                          <span>{option.label}</span>
+                        </div>
+                      )}
+                    </React.Fragment>.Fragment>
+                  )}
+                </ChipView>
+              </div>
+            </div>
+            <div className="ml-[0.50rem] mr-[0.88rem] flex flex-col items-center gap-[3.75rem] md:mx-0 sm:gap-[2.88rem]">
+              <div className="mx-auto flex w-full self-stretch">
+                <slider
+                autoplayInterval={2000}
+                responsive={{0: { items: 1}, 551: { items: 1}, 1051: {itms: 1 } }}
+                
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
