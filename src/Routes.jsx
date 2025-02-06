@@ -1,19 +1,19 @@
 import React from "react";
 import { useRoutes } from "react-router-dom";
-import Home from "pages/Home";
-import NotFound from "pages/NotFound";
-import HomepageDashboard from "pages/HomepageDashboard";
-import ChallengesHackathons from "pages/ChallengesHackathons";
-import ChallengeDetails from "pages/ChallengeDetails";
-import Home1 from "pages/Home1";
-import CHALLENGESHACKHATONSPAGE from "pages/CHALLENGESHACKHATONSPAGE";
-import ABOUT from "pages/ABOUT";
-import FORLEARNINGINSTITUTIONSPAGE from "pages/FORLEARNINGINSTITUTIONSPAGE";
-import HomepageDashboardOne from "pages/HomepageDashboardOne";
-import ChallengesHackathonsOne from "pages/ChallengesHackathonsOne";
-import ChallengesHackathonsTwo from "pages/ChallengesHackathonsTwo";
-import ChallengeDetailsOne from "pages/ChallengeDetailsOne";
-import EditChallengesHackathons from "pages/EditChallengesHackathons";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
+import HomepageDashboard from "./pages/HomepageDashboard";
+import ChallengesHackathons from "./pages/ChallengesHackathons";
+import ChallengeDetails from "./pages/ChallengeDetails";
+import Home1 from "./pages/Home1";
+import CHALLENGESHACKHATONSPAGE from "./pages/CHALLENGESHACKHATONSPAGE";
+import ABOUT from "./pages/ABOUT";
+import FORLEARNINGINSTITUTIONSPAGE from "./pages/FORLEARNINGINSTITUTIONSPAGE";
+import HomepageDashboardOne from "./pages/HomepageDashboardOne";
+import ChallengesHackathonsOne from "./pages/ChallengesHackathonsOne";
+import ChallengesHackathonsTwo from "./pages/ChallengesHackathonsTwo";
+import ChallengeDetailsOne from "./pages/ChallengeDetailsOne";
+import EditChallengesHackathons from "./pages/EditChallengesHackathons";
 
 const ProjectRoutes = () => {
   let element = useRoutes([

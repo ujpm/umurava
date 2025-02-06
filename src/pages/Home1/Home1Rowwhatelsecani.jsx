@@ -43,7 +43,7 @@ export default function Home1Rowwhatelsecani() {
             </div>
             <img
              src="images/img_skill_section_banner.png"
-             alt+"skillssection"
+             alt="skillssection"
              className="h-[30,00rem] w-[40% self-center object-contain md:w-full"
             />
           </div>
